@@ -1,26 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views import View
 from .models import ReportIncident
+from .serializers import IncidentSerializer
+from rest_framework import viewsets, status
+from rest_framework.response import Response
+from rest_framework.decorators import action
 
 # Create your views here.
-class CreateIncident(View):
-    
-    def get(self, request):
-        return HttpResponse('testing functions in class')
 
-class GetIncident(View):
-    
-    incedents = ReportIncident.objects.all()
-    currentIncident = ''
+class Incident(viewsets.ModelViewSet):
+    queryset = ReportIncident.objects.all()
+    serializer_class = IncidentSerializer
 
-    currentIncident += f"You currently have {len(incedents)} reported incident <br>"
+    @action(detail=True, methods=['GET'])
+    def incident_func(self, request, pk=None):
+        response = {'message': 'its working fine'}
+        return Response(response, status=status.HTTP_200_OK)
 
-    for incident in incedents:
-        currentIncident += f"{incident.place} {incident.time} {incident.action} "
 
-    def get(self, request):
-        return HttpResponse(self.currentIncident)
-
-def testing(request):
-    return HttpResponse('testing message from view')
