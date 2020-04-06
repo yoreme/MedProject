@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import ReportIncident
+from .models import Incident
 from .serializers import IncidentSerializer
 from rest_framework import viewsets, status
 from rest_framework.response import Response
@@ -9,7 +9,7 @@ from rest_framework.decorators import action
 # Create your views here.
 
 class Incident(viewsets.ModelViewSet):
-    queryset = ReportIncident.objects.all()
+    queryset = Incident.objects.all()
     serializer_class = IncidentSerializer
 
     @action(detail=True, methods=['GET'])

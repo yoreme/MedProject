@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ReportIncident
+from .models import Incident
 
 # Register your models here.
-admin.site.register(ReportIncident)
+admin.site.register(Incident)
