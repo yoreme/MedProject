@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 class IncidentAPIView(APIView):
+    """ APIView for creating Incident as a POST Request """
     serializer_class = IncidentPostSerializer
 
     def post(self, request):
@@ -50,6 +51,7 @@ class IncidentAPIView(APIView):
 
 
 class IncidentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    """ APIView for updating,editing and deleting Incident it accept muliple HTTP Request get,post,delete etc """
     serializer_class =IncidentDetailSerializer
     lookup_field = 'id'
     queryset = Incident.objects.all()
@@ -78,6 +80,7 @@ class IncidentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 
 
 class IncidentList(generics.ListAPIView):
+    """ APIView that returns list of  Incident a GET Request """
     serializer_class=IncidentDetailSerializer
     queryset = Incident.objects.all()
     ordering_fields = ('created_at', 'personal_number')
