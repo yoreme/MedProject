@@ -18,12 +18,17 @@ from django.urls import path,include
 from rest_framework_swagger.views import get_swagger_view
 from django.conf.urls.static import static
 from django.conf import settings
-from django.urls import path
-from django.conf.urls import include
 
 
-schema_view = get_swagger_view(title='Spreading Messaging API')
+schema_view = get_swagger_view(title='Med Proj API')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/docs/', schema_view,name='api-doc')
+    path('api/docs/', schema_view,name='api-doc'),
+    path('incidents/',include('incidents.urls')),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+
+if settings.DEBUG:
+
+    urlpatterns += static(settings.STATIC_URL,
+                        document_root=settings.STATIC_ROOT)

@@ -1,5 +1,13 @@
 .DS_STORE
 
+# Environments
+\.env
+\.venv
+env/
+venv/
+ENV/
+MedProject/settings/
+
 # Virtualenv related
 bin/
 include/
@@ -89,13 +97,6 @@ celerybeat-schedule
 
 # SageMath parsed files
 *.sage.py
-
-# Environments
-\.env
-\.venv
-env/
-venv/
-ENV/
 
 # Spyder project settings
 .spyderproject
