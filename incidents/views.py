@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
+from rest_framework_swagger import renderers
 import utils.geolocationservice as geolocation
 
 from .models import Incident
@@ -34,15 +35,15 @@ class IncidentAPIView(APIView):
         serializer=self.serializer_class(data=request.data)
         
         if serializer.is_valid(raise_exception=True):
+            client_ip_x = request.META['REMOTE_ADDR']
+            print('user Ip address:' + client_ip_x)
             client_ip=get_client_ip(request)
             geo_location_response=geolocation.geolocationClient.get_location(client_ip)
             print(geo_location_response)
             logger.info('geo_location_response response:{}'.format(geo_location_response))
             data =serializer.validated_data
             if geo_location_response is not None:
-                Incident.objects.create(place=data.get('place'),personal_number=data.get('personal_number'),
-                description=data.get('description'),action=data.get('action'),
-                ip_address=client_ip,latitude=geo_location_response['latitude'],
+                serializer.save(ip_address=client_ip,latitude=geo_location_response['latitude'],
                 longitude=geo_location_response['longitude'], country_name=geo_location_response['country_name'],
                 country_code=geo_location_response['country_code'], city=geo_location_response['city'],
                 region=geo_location_response['region'])

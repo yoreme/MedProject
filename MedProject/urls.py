@@ -23,12 +23,15 @@ from django.conf import settings
 schema_view = get_swagger_view(title='Med Proj API')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/docs/', schema_view,name='api-doc'),
+    path('docs/', schema_view,name='schema_view'),
     path('incidents/',include('incidents.urls')),
-] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+] 
 
 
 if settings.DEBUG:
 
     urlpatterns += static(settings.STATIC_URL,
                         document_root=settings.STATIC_ROOT)
+
+    urlpatterns += static(settings.MEDIA_URL,
+                        document_root=settings.MEDIA_ROOT)
