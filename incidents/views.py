@@ -15,6 +15,8 @@ from .serializers import IncidentSerializer,IncidentPostSerializer,IncidentDetai
 
 # import the logging library
 import logging
+from drf_yasg.utils import swagger_auto_schema
+
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -29,6 +31,8 @@ class IncidentAPIView(APIView):
     """ APIView for creating Incident as a POST Request """
     permission_classes = [AllowAny]
     serializer_class = IncidentPostSerializer
+
+    @swagger_auto_schema(request_body=IncidentPostSerializer)
 
     def post(self, request):
         logger.info('Incident request data:{}'.format(request.data))

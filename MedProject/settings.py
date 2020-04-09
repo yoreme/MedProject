@@ -39,13 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework_swagger',
     'django_filters',
     'rangefilter',
     'corsheaders',
     'drf_yasg',
-    'incident',
-    'corsheaders',
+    'incidents'
 ]
 
 MIDDLEWARE = [
@@ -91,21 +89,14 @@ CORS_ORIGIN_WHITELIST = [
 
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'medprojdb',
-        'USER': 'postgres',
-        'PASSWORD': 'aisekegbe$1',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DATABASE_NAME', default='medprojdb'),
+        'USER': config('DATABASE_USER', default='postgres'),
+        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
+        'HOST':config('DATABASE_HOST', default='localhost'),
+        'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 
 
 # Password validation
@@ -126,6 +117,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
+}
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
