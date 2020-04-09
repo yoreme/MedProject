@@ -1,3 +1,25 @@
+.DS_STORE
+
+# Environments
+.venv
+\.env
+\.venv
+env/
+venv/
+ENV/
+MedProject/settings/
+.env.dev
+
+# Virtualenv related
+bin/
+include/
+pip-selfcheck.json
+
+# Django related 
+# src/<yourproject>/settings/local.py
+# static-cdn/  # any collected static files 
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -23,7 +45,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -45,7 +66,6 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-.pytest_cache/
 
 # Translations
 *.mo
@@ -53,8 +73,6 @@ coverage.xml
 
 # Django stuff:
 *.log
-.static_storage/
-.media/
 local_settings.py
 
 # Flask stuff:
@@ -82,16 +100,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-.env.dev
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -104,3 +112,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+__pycache__/
+*.pyc
+
+\.tools/
+\.vscode/
+\.dotnet/

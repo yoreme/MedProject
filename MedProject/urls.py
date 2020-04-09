@@ -15,14 +15,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from rest_framework_swagger.views import get_swagger_view
 from django.conf.urls.static import static
 from django.conf import settings
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
 
+...
 
-schema_view = get_swagger_view(title='Med Proj API')
+schema_view = get_schema_view(
+   openapi.Info(
+      title="Med Proj API",
+      default_version='v1',
+      description="Med Proj description",
+      terms_of_service="https://www.google.com/policies/terms/",
+      contact=openapi.Contact(email="contact@snippets.local"),
+      license=openapi.License(name="Med Proj License"),
+   ),
+   public=True,
+   permission_classes=(permissions.AllowAny,),
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('swagger', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('docs/', schema_view,name='schema_view'),
     path('incidents/',include('incidents.urls')),
 ] 

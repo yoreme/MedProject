@@ -39,13 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework_swagger',
     'django_filters',
     'rangefilter',
     'corsheaders',
     'drf_yasg',
+<<<<<<< HEAD
     'incident',
     'incidents',
+=======
+    'incidents'
+>>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
 ]
 
 MIDDLEWARE = [
@@ -92,14 +95,21 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+<<<<<<< HEAD
         'NAME': config('DATABASE_NAME', default='medprojectdb'),
         'USER': config('DATABASE_USER', default='postgres'),
         'PASSWORD':config('DATABASE_PASSWORD', default='Master01'),
+=======
+        'NAME': config('DATABASE_NAME', default='medprojdb'),
+        'USER': config('DATABASE_USER', default='postgres'),
+        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
+>>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
         'HOST':config('DATABASE_HOST', default='localhost'),
         'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
 }
 
+<<<<<<< HEAD
 
 # DATABASES = {
 #     'default': {
@@ -108,6 +118,8 @@ DATABASES = {
 #     }
 # }
 
+=======
+>>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -127,6 +139,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
+}
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',

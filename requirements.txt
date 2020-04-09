@@ -12,4 +12,5 @@ django-filter>=2.2.0
 drf-yasg>=1.17.1
 
 python-decouple>=3.3
+drf-yasg>=1.17.1
 
