@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'django_filters',
     'rangefilter',
     'corsheaders',
-
-    'incidents'
+    'drf_yasg',
+    'incident',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'MedProject.wsgi.application'
 
+# got this from https://github.com/adamchainz/django-cors-headers 
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:4200",
+    "http://127.0.0.1:9000"
+]
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
