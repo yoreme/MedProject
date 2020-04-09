@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_yasg',
     'incident',
-    'corsheaders',
+    'incidents',
 ]
 
 MIDDLEWARE = [
@@ -91,14 +91,15 @@ CORS_ORIGIN_WHITELIST = [
 
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'medprojdb',
-        'USER': 'postgres',
-        'PASSWORD': 'aisekegbe$1',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DATABASE_NAME', default='medprojectdb'),
+        'USER': config('DATABASE_USER', default='postgres'),
+        'PASSWORD':config('DATABASE_PASSWORD', default='Master01'),
+        'HOST':config('DATABASE_HOST', default='localhost'),
+        'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
 }
+
 
 # DATABASES = {
 #     'default': {
