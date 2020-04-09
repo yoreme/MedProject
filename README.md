@@ -1,6 +1,6 @@
 # MedProject
 # To create environment pip for project
-python -m venv   ./venv
+python -m venv   ./.venv
 
 # To active pip env on window
 . venv/Scripts/activate

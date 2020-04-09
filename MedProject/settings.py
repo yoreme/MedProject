@@ -43,12 +43,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'corsheaders',
     'drf_yasg',
-<<<<<<< HEAD
-    'incident',
-    'incidents',
-=======
     'incidents'
->>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
 ]
 
 MIDDLEWARE = [
@@ -95,21 +90,13 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-<<<<<<< HEAD
         'NAME': config('DATABASE_NAME', default='medprojectdb'),
         'USER': config('DATABASE_USER', default='postgres'),
         'PASSWORD':config('DATABASE_PASSWORD', default='Master01'),
-=======
-        'NAME': config('DATABASE_NAME', default='medprojdb'),
-        'USER': config('DATABASE_USER', default='postgres'),
-        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
->>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
         'HOST':config('DATABASE_HOST', default='localhost'),
         'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
 }
-
-<<<<<<< HEAD
 
 # DATABASES = {
 #     'default': {
@@ -118,8 +105,6 @@ DATABASES = {
 #     }
 # }
 
-=======
->>>>>>> 458d62acccd9e50497d92ab1a99a980567ebcdeb
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
