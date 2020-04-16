@@ -29,7 +29,7 @@ class Incident(BaseAbstractModel):
     #                     (3, "Adverse Event"),
     #                 )
     # type = models.PositiveSmallIntegerField(choices=incident_types, default=1)
-    type = models.CharField(max_length=10, default=RISK, choices=INCIDENT_TYPES, null=True, blank=True)
+    incident_type = models.CharField(max_length=10, default=RISK, choices=INCIDENT_TYPES, null=True, blank=True)
 
 
     #all this are to filled from code behind

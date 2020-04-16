@@ -91,9 +91,9 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DATABASE_NAME', default='medprojectdb'),
+        'NAME': config('DATABASE_NAME', default='medprojdb'),
         'USER': config('DATABASE_USER', default='postgres'),
-        'PASSWORD':config('DATABASE_PASSWORD', default='4w3darsa'),
+        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
         'HOST':config('DATABASE_HOST', default='localhost'),
         'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
