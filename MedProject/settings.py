@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'rangefilter',
     'corsheaders',
     'drf_yasg',
-    'incidents'
+    'incidents',
+    'descriptions'
 ]
 
 MIDDLEWARE = [
@@ -90,13 +91,20 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DATABASE_NAME', default='medprojdb'),
+        'NAME': config('DATABASE_NAME', default='medprojectdb'),
         'USER': config('DATABASE_USER', default='postgres'),
-        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
+        'PASSWORD':config('DATABASE_PASSWORD', default='4w3darsa'),
         'HOST':config('DATABASE_HOST', default='localhost'),
         'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
