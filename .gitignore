@@ -7,7 +7,6 @@
 env/
 venv/
 ENV/
-MedProject/settings/
 .env.dev
 
 # Virtualenv related

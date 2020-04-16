@@ -1,5 +1,8 @@
 from django.db import models
+from datetime import datetime, date
 from  basemodel.models import BaseAbstractModel
+import uuid
+
 # Create your models here.
 
 class Incident(BaseAbstractModel):
@@ -9,8 +12,28 @@ class Incident(BaseAbstractModel):
     description = models.TextField(max_length=500,blank=False, null=False)
     action = models.TextField(max_length=500,blank=True, null=True)
     image = models.ImageField(upload_to='images/',blank=True, null=True)
+    incident_date=models.DateTimeField(default=datetime.now(), blank=False, null=False)
+
+    # Login Status
+    RISK = 'Risk'
+    NEARMISS = 'Near miss'
+    ADVERSEEVENT = 'Adverse Event'
+    INCIDENT_TYPES = ((RISK, 'Risk'),
+                (NEARMISS, 'Near miss'),
+                (NEARMISS, 'Adverse Event'),
+                )
+    
+    # incident_types = (
+    #                     (1, "Risk"),
+    #                     (2, "Near miss"),
+    #                     (3, "Adverse Event"),
+    #                 )
+    # type = models.PositiveSmallIntegerField(choices=incident_types, default=1)
+    type = models.CharField(max_length=10, default=RISK, choices=INCIDENT_TYPES, null=True, blank=True)
+
 
     #all this are to filled from code behind
+    reference_number=models.UUIDField(max_length=100, blank=True, unique=True,default=uuid.uuid4, editable=False)
     ip_address=models.CharField(max_length=50,blank=False, null=False)
     latitude=models.CharField(max_length=40,blank=False, null=False)
     longitude=models.CharField(max_length=40,blank=False, null=False)
@@ -22,3 +45,4 @@ class Incident(BaseAbstractModel):
     def __str__(self):
         """ Return a string representation of our incident """
         return "{}".format(self.personal_number)
+

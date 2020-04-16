@@ -16,6 +16,7 @@ from .serializers import IncidentSerializer,IncidentPostSerializer,IncidentDetai
 # import the logging library
 import logging
 from drf_yasg.utils import swagger_auto_schema
+from drf_yasg.openapi import Schema, TYPE_OBJECT, TYPE_STRING, TYPE_ARRAY
 
 
 # Get an instance of a logger
@@ -32,13 +33,23 @@ class IncidentAPIView(APIView):
     permission_classes = [AllowAny]
     serializer_class = IncidentPostSerializer
 
-    @swagger_auto_schema(request_body=IncidentPostSerializer)
+    @swagger_auto_schema(operation_description="partial_update description override",request_body=IncidentPostSerializer,
+        responses={status.HTTP_200_OK: Schema(type=TYPE_OBJECT)})
 
     def post(self, request):
         logger.info('Incident request data:{}'.format(request.data))
         serializer=self.serializer_class(data=request.data)
         
         if serializer.is_valid(raise_exception=True):
+            try:
+                print('user Ip address a:' + request.META.get('HTTP_X_REAL_IP')) 
+            except :
+                pass
+            try:
+                 print('user Ip address b:' + request.headers['X-Real-IP']) 
+            except :
+                pass
+            
             client_ip_x = request.META['REMOTE_ADDR']
             print('user Ip address:' + client_ip_x)
             client_ip=get_client_ip(request)
@@ -69,12 +80,15 @@ class IncidentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = 'id'
     queryset = Incident.objects.all()
 
+    @swagger_auto_schema(operation_description="GET /incident/{id}/")
     def get_queryset(self):
         return get_object_or_404(Incident,id=self.kwargs.get(self.lookup_field))
 
+    @swagger_auto_schema(operation_description="GET /incident/{id}/")
     def get_object(self):
         return self.get_queryset()
 
+    @swagger_auto_schema(operation_description="PATCH /incident/{id}/")
     def update(self, request, *args, **kwargs):
         partial = kwargs.pop('partial', False)
         instance = self.get_queryset()
@@ -84,7 +98,8 @@ class IncidentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response({'message':'An error occurred while processing yur request','error':serializer.errors,}, status=status.HTTP_400_BAD_REQUEST)
 
-
+    @swagger_auto_schema(operation_description="DELETE /incident/{id}/")
+    @action(detail=True, methods=['DELETE'])
     def destroy(self, request, *args, **kwargs):
         instance = self.get_queryset()
         self.perform_destroy(instance)

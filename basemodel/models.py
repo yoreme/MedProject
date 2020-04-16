@@ -8,8 +8,8 @@ class BaseAbstractModel(models.Model):
      updated_at
      is_deleted
     """
-    created_at=models.DateTimeField(auto_now_add=True)
-    updated_at=models.DateTimeField(auto_now=True)
+    created_at=models.DateTimeField(auto_now_add=True,editable=False)
+    updated_at=models.DateTimeField(auto_now=True,editable=False)
     is_deleted=models.BooleanField(default=False)
 
     def soft_delete(self):
