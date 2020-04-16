@@ -14,3 +14,4 @@ drf-yasg>=1.17.1
 python-decouple>=3.3
 drf-yasg>=1.17.1
 
+scipy
