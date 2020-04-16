@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'rangefilter',
     'corsheaders',
     'drf_yasg',
-    'incidents'
+    'incidents',
+    'descriptions'
 ]
 
 MIDDLEWARE = [

@@ -1,7 +1,8 @@
 import codecs
 import numpy as np
+import logging
 
-from scipy.stats import wasserstein_distance
+logger = logging.getLogger(__name__)
 
 class Embeddings:
     model = None
@@ -26,7 +27,9 @@ class Embeddings:
         :param sentence: inputs a single sentences whose word embedding is to be extracted.
         :return: returns numpy array containing word embedding of all words in input sentence.
         """
-        return np.array([self.model.get(val, np.zeros(100)) for val in sentence.split()], dtype=np.float64)
+        logger.warn(sentence)
+
+        return np.array([self.model.get(val, np.zeros(300)) for val in sentence.split()], dtype=np.float64)
 
     def get_w2v_sum(self, sentence):
         """
@@ -40,9 +43,9 @@ class Embeddings:
             ack = np.add(ack, item)
         return ack 
 
-embeddings = Embeddings()
-embeddings.load_embeddings("c:\dev\swectors-300dim.txt")
-mw = embeddings.get_w2v_sum("presidenten talade till folket")
-kd = embeddings.get_w2v_sum("i norge äter de mackor till lunch")
+# embeddings = Embeddings()
+# embeddings.load_embeddings("c:\dev\swectors-300dim.txt")
+# mw = embeddings.get_w2v_sum("presidenten talade till folket")
+# kd = embeddings.get_w2v_sum("i norge äter de mackor till lunch")
 
-print(wasserstein_distance(mw, kd))
+# print(wasserstein_distance(mw, kd))
