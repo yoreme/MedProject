@@ -1,16 +1,48 @@
+import codecs
+import numpy as np
+
 from scipy.stats import wasserstein_distance
 
 class Embeddings:
-    def tryMeOut(self):
-        wd1 = wasserstein_distance([0, 1, 3], [5, 6, 8])
+    model = None
 
-        wd2 = wasserstein_distance([0, 1], [0, 1.1])
+    def load_embeddings(self, file_path):
+        """
+        :param file_path: path of embeddings file.
+        """
 
-        wd3 = wasserstein_distance([3.4, 3.9, 7.5, 7.8], [4.5, 1.4], [1.4, 0.9, 3.1, 7.2], [3.2, 3.5])
+        f = open(file_path, 'r', encoding='utf-8').readlines()
+        model = {}
+        for line in f[1:]:
+            split_line = line.split()
+            word = split_line[0]
+            embedding = np.array([float(val) for val in split_line[1:]])
+            model[word] = embedding
+        self.model = model
+        print(len(self.model))
 
-        print(wd1)
-        print(wd2)
-        print(wd3)
+    def get_w2v(self, sentence):
+        """
+        :param sentence: inputs a single sentences whose word embedding is to be extracted.
+        :return: returns numpy array containing word embedding of all words in input sentence.
+        """
+        return np.array([self.model.get(val, np.zeros(100)) for val in sentence.split()], dtype=np.float64)
+
+    def get_w2v_sum(self, sentence):
+        """
+        :param sentence: inputs a single sentences whose word embedding is to be extracted.
+        :return: returns numpy array containing the sum of the word embedding of all words in input sentence.
+        """
+        items = self.get_w2v(sentence)
+        
+        ack = [0] * 300
+        for item in items:
+            ack = np.add(ack, item)
+        return ack 
 
 embeddings = Embeddings()
-embeddings.tryMeOut()
+embeddings.load_embeddings("c:\dev\swectors-300dim.txt")
+mw = embeddings.get_w2v_sum("presidenten talade till folket")
+kd = embeddings.get_w2v_sum("i norge äter de mackor till lunch")
+
+print(wasserstein_distance(mw, kd))

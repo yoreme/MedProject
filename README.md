@@ -12,6 +12,10 @@ python -m venv   ./.venv
 create a .env.dev, then add your detail using key pair
 Name=value
 
+# migrate database
+python manage.py makemigrations
+python manage.py migrate
+
 # to run app
 python manage.py runserver
 
