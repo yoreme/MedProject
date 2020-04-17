@@ -3,7 +3,7 @@
 python -m venv   ./.venv
 
 # To active pip env on window
-. venv/Scripts/activate
+./venv/Scripts/activate
 
 # To install all library required for this project
  pip install -r requirements.txt
