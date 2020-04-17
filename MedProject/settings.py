@@ -80,10 +80,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'MedProject.wsgi.application'
 
 # got this from https://github.com/adamchainz/django-cors-headers 
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:4200",
-    "http://127.0.0.1:9000"
-]
+CORS_ORIGIN_WHITELIST =config('ALLOWED_HOSTS', cast=Csv())
+#config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')]) 
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -91,9 +89,9 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DATABASE_NAME', default='medprojdb'),
-        'USER': config('DATABASE_USER', default='postgres'),
-        'PASSWORD':config('DATABASE_PASSWORD', default='aisekegbe$1'),
+        'NAME': config('DATABASE_NAME'),
+        'USER': config('DATABASE_USER'),
+        'PASSWORD':config('DATABASE_PASSWORD'),
         'HOST':config('DATABASE_HOST', default='localhost'),
         'PORT':config('DATABASE_PORT', default=5432, cast=int),
     }

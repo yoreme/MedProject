@@ -9,8 +9,22 @@ python -m venv   ./.venv
  pip install -r requirements.txt
 
 # To set environment deployment variable i.e db name etc
-create a .env.dev, then add your detail using key pair
+create a .env, then add your detail using key pair
 Name=value
+===================================
+List of NameValue for .env file
+===================================
+==================================
+DEBUG = True
+ALLOWED_HOSTS = *
+DATABASE_NAME = your-db-name
+DATABASE_USER = your-username
+DATABASE_PASSWORD = your-password
+DATABASE_HOST = localhost
+DATABASE_PORT = 5432
+ALLOWED_HOSTS = *
+===================================
+
 
 # to run migration
 python manage.py makemigrations

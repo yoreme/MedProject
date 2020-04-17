@@ -9,8 +9,20 @@ class Incident(BaseAbstractModel):
     """ Incident model  """
     place = models.CharField(max_length=50,blank=False, null=False)
     personal_number = models.CharField(max_length=12,blank=False, null=False)
-    description = models.TextField(max_length=500,blank=False, null=False)
-    action = models.TextField(max_length=500,blank=True, null=True)
+    patient_firstname = models.CharField(max_length=12,blank=False, null=False)
+    patient_lastname = models.CharField(max_length=12,blank=False, null=False)
+    suggestion = models.TextField(max_length=5000,blank=False, null=False)
+
+     # Login Status
+    MALE = 'MALE'
+    FEMALE = 'FEMALE'
+    SEXS = ((MALE, 'MALE'),
+            (FEMALE, 'FEMALE')
+            )
+
+    patient_sex =models.CharField(max_length=10, default=MALE, choices=SEXS, null=True, blank=True)
+    description = models.TextField(max_length=5000,blank=False, null=False)
+    action = models.TextField(max_length=5000,blank=True, null=True)
     image = models.ImageField(upload_to='images/',blank=True, null=True)
     incident_date=models.DateTimeField(default=datetime.now(), blank=False, null=False)
 
