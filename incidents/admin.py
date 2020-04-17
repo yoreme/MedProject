@@ -6,8 +6,8 @@ from .models import Incident
 
 # Register your models here.
 class IncidentAdmin(admin.ModelAdmin):
-    list_display=('id','place','personal_number','description','action','ip_address','latitude','longitude','country_name','country_code','city','region','created_at')
-    list_filter = ('country_name','city','region','personal_number',('created_at', DateRangeFilter),)
+    list_display=('id','place','personal_number','patient_firstname','patient_lastname','suggestion','patient_sex','description','action','ip_address','latitude','longitude','country_name','country_code','city','region','created_at')
+    list_filter = ('country_name','city','region','patient_sex','personal_number',('created_at', DateRangeFilter),)
     list_display_links=('id','personal_number')
     search_fields=('email','personal_number',)
     ordering = ('created_at',)

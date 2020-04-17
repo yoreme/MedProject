@@ -29,7 +29,7 @@ class IncidentPostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Incident
-        fields = ('place','personal_number','description', 'action','incident_date','incident_type')
+        fields = ('place','personal_number','patient_firstname','patient_lastname','suggestion','patient_sex','description', 'action','incident_date','incident_type')
 
     def validate(self, attrs):
         place = attrs.get('place',None)
