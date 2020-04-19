@@ -25,10 +25,15 @@ ALLOWED_HOSTS = *
 
 
 # To create environment pip for project
-python -m venv   ./.venv
+python -m venv   ./venv
 
 # To active pip env on window
-./venv/Scripts/activate
+# if using bash
+. venv/Scripts/activate
+# if using cmd for windows
+.\venv\Scripts\activate
+# for mac
+./Scripts/activate.bat
 
 # To install all library required for this project
  pip install -r requirements.txt

@@ -21,6 +21,9 @@ from .serializers import (LoginSerializer,LogoutSerializer,PasswordChangeSeriali
 RegistrationSerializer,PasswordResetSerializer,PasswordResetConfirmSerializer,UserSerializer)
 
 from .models import User,UserProfile
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg.openapi import Schema, TYPE_OBJECT, TYPE_STRING, TYPE_ARRAY,Response
+
 # import the logging library
 import logging
 
@@ -28,14 +31,17 @@ import logging
 logger = logging.getLogger(__name__)
 # Create your views here.
 
-
-
-
 class RegistrationAPIView(APIView):
     # Allow any user (authenticated or not) to hit this endpoint.
     permission_classes = (AllowAny,)
-    #renderer_classes = (UserJSONRenderer,)
     serializer_class = RegistrationSerializer
+
+    @swagger_auto_schema(operation_description="user registration",request_body=RegistrationSerializer,
+    responses = {
+            '200' : Schema(type=TYPE_OBJECT),
+            '400': 'Bad Request'
+        })       
+        #responses={status.HTTP_200_OK:Schema(type=TYPE_OBJECT)})
 
     def post(self, request):
         """ Post method for registration  """
@@ -62,6 +68,8 @@ class LoginAPIView(APIView):
     permission_classes=[AllowAny,]
     serializer_class=LoginSerializer
 
+    @swagger_auto_schema(operation_description="user login",request_body=LoginSerializer,
+        responses={status.HTTP_200_OK: Schema(type=TYPE_OBJECT)})
     def post(self,request):
         """ Post method to get login  """
         serializer=self.serializer_class(data=request.data)
@@ -135,6 +143,8 @@ class LogoutAPIView(APIView):
     Logs out an authorized user.
     """
     permission_classes = (IsAuthenticated,)
+    @swagger_auto_schema(operation_description="user log out",
+    responses={status.HTTP_200_OK: Schema(type=TYPE_OBJECT)})
     def get(self, request):
         logger.info('Logout request data:{}'.format(request.data))
         user = User.objects.get(email=request.user.email)
@@ -150,6 +160,9 @@ class ChangePasswordAPIView(APIView):
     """
     permission_classes = (IsAuthenticated,)
     serializer_class = PasswordChangeSerializer
+
+    @swagger_auto_schema(operation_description="change user password",request_body=PasswordChangeSerializer,
+        responses={status.HTTP_200_OK: Schema(type=TYPE_OBJECT)})
     def post(self, request):
         logger.info('Change Password request data:{}'.format(request.data))
         serializer=self.serializer_class(data=request.data)

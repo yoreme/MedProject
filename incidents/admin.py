@@ -15,6 +15,3 @@ class IncidentAdmin(admin.ModelAdmin):
 
 admin.site.register(Incident,IncidentAdmin)
 
-admin.site.site_header = "Med Proj Admin Portal"
-admin.site.site_title = "Med Proj Admin Portal"
-admin.site.index_title = "Welcome to Med Proj Admin Portal"

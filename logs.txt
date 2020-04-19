@@ -32,3 +32,545 @@
 19-04-2020 14:04:00 ERROR    [views.py:25] Still here...
 19-04-2020 14:04:00 WARNING  [views.py:26] Goodbye
 19-04-2020 14:04:00 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 14:35:48 WARNING  [views.py:24] Hello
+19-04-2020 14:35:48 ERROR    [views.py:25] Still here...
+19-04-2020 14:35:48 WARNING  [views.py:26] Goodbye
+19-04-2020 14:35:48 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 14:39:06 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:39:06 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:39:06 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:39:06 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:39:57 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:39:57 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:39:57 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:39:57 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:40:33 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:40:33 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:40:33 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:40:33 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:40:40 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:40:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:40:40 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:40:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:41:30 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:41:30 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:41:30 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:41:30 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:04 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:04 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:04 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:04 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:20 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:20 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:20 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:20 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:55 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:55 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:55 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 14:42:55 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:42:56 WARNING  [views.py:24] Hello
+19-04-2020 14:42:56 ERROR    [views.py:25] Still here...
+19-04-2020 14:42:56 WARNING  [views.py:26] Goodbye
+19-04-2020 14:42:56 WARNING  [views.py:24] Hello
+19-04-2020 14:42:56 ERROR    [views.py:25] Still here...
+19-04-2020 14:42:56 WARNING  [views.py:26] Goodbye
+19-04-2020 14:42:57 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 14:42:57 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 14:44:29 WARNING  [log.py:222] Not Found: /accounts/login/
+19-04-2020 14:44:29 WARNING  [log.py:222] Not Found: /favicon.ico
+19-04-2020 15:04:40 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\incidents\views.py changed, reloading.
+19-04-2020 15:04:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:04:40 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\incidents\views.py changed, reloading.
+19-04-2020 15:04:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:04:42 WARNING  [views.py:24] Hello
+19-04-2020 15:04:42 ERROR    [views.py:25] Still here...
+19-04-2020 15:04:42 ERROR    [views.py:25] Still here...
+19-04-2020 15:04:42 WARNING  [views.py:26] Goodbye
+19-04-2020 15:04:42 WARNING  [views.py:26] Goodbye
+19-04-2020 15:04:42 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:04:42 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:15:54 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\basemodel\models.py changed, reloading.
+19-04-2020 15:15:54 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:15:54 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\basemodel\models.py changed, reloading.
+19-04-2020 15:15:54 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:22:54 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:22:54 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:23:36 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\basemodel\baseresponse.py changed, reloading.
+19-04-2020 15:23:36 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:23:37 WARNING  [views.py:24] Hello
+19-04-2020 15:23:37 ERROR    [views.py:25] Still here...
+19-04-2020 15:23:37 WARNING  [views.py:26] Goodbye
+19-04-2020 15:23:37 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:24:43 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:25:11 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\basemodel\baseresponse.py changed, reloading.
+19-04-2020 15:25:11 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:25:12 WARNING  [views.py:24] Hello
+19-04-2020 15:25:12 ERROR    [views.py:25] Still here...
+19-04-2020 15:25:12 WARNING  [views.py:26] Goodbye
+19-04-2020 15:25:13 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:26:00 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:26:01 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:26:55 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:26:55 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:26:56 WARNING  [views.py:24] Hello
+19-04-2020 15:26:56 ERROR    [views.py:25] Still here...
+19-04-2020 15:26:56 WARNING  [views.py:26] Goodbye
+19-04-2020 15:26:57 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:27:56 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:27:58 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:27:58 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:31:31 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:31:38 WARNING  [views.py:24] Hello
+19-04-2020 15:31:38 ERROR    [views.py:25] Still here...
+19-04-2020 15:31:38 WARNING  [views.py:26] Goodbye
+19-04-2020 15:31:38 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:32:10 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:32:27 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+19-04-2020 15:35:17 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:35:17 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:35:18 WARNING  [views.py:24] Hello
+19-04-2020 15:35:18 ERROR    [views.py:25] Still here...
+19-04-2020 15:35:18 WARNING  [views.py:26] Goodbye
+19-04-2020 15:35:18 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:36:54 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:36:54 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:36:55 WARNING  [views.py:24] Hello
+19-04-2020 15:36:55 ERROR    [views.py:25] Still here...
+19-04-2020 15:36:55 WARNING  [views.py:26] Goodbye
+19-04-2020 15:36:56 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:39:02 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:39:02 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:39:03 WARNING  [views.py:24] Hello
+19-04-2020 15:39:03 ERROR    [views.py:25] Still here...
+19-04-2020 15:39:03 WARNING  [views.py:26] Goodbye
+19-04-2020 15:39:03 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:39:51 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:39:51 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:39:52 WARNING  [views.py:24] Hello
+19-04-2020 15:39:52 ERROR    [views.py:25] Still here...
+19-04-2020 15:39:52 WARNING  [views.py:26] Goodbye
+19-04-2020 15:39:52 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 15:40:31 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 182, in get_responses
+    responses=self.get_response_schemas(response_serializers)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 266, in get_response_schemas
+    serializer = force_serializer_instance(serializer)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\utils.py", line 315, in force_serializer_instance
+    assert issubclass(serializer, serializers.BaseSerializer), "Serializer required, not %s" % serializer.__name__
+AssertionError: Serializer required, not ResponseField
+19-04-2020 15:43:46 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 15:43:46 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 15:43:47 WARNING  [views.py:24] Hello
+19-04-2020 15:43:47 ERROR    [views.py:25] Still here...
+19-04-2020 15:43:47 WARNING  [views.py:26] Goodbye
+19-04-2020 15:43:47 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 16:26:05 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\basemodel\baseresponse.py changed, reloading.
+19-04-2020 16:26:05 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 16:26:06 WARNING  [views.py:24] Hello
+19-04-2020 16:26:06 ERROR    [views.py:25] Still here...
+19-04-2020 16:26:06 WARNING  [views.py:26] Goodbye
+19-04-2020 16:26:06 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 16:26:32 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 16:26:32 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 16:26:33 WARNING  [views.py:24] Hello
+19-04-2020 16:26:33 ERROR    [views.py:25] Still here...
+19-04-2020 16:26:33 WARNING  [views.py:26] Goodbye
+19-04-2020 16:26:34 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 16:34:12 ERROR    [log.py:222] Internal Server Error: /swagger
+Traceback (most recent call last):
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 254, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 412, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\generators.py", line 454, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 182, in get_responses
+    responses=self.get_response_schemas(response_serializers)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 259, in get_response_schemas
+    response.schema = self.serializer_to_schema(serializer)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 445, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 118, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 42, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 236, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 118, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 135, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\openapi.py", line 690, in setdefault
+    ret = maker()
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 102, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Project\Web\python\MedProject\.venv\lib\site-packages\rest_framework\serializers.py", line 1013, in get_fields
+    assert hasattr(self, 'Meta'), (
+AssertionError: Class ResponseSerializer missing "Meta" attribute
+19-04-2020 16:46:53 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\appAuths\views.py changed, reloading.
+19-04-2020 16:46:53 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 16:46:54 WARNING  [views.py:24] Hello
+19-04-2020 16:46:54 ERROR    [views.py:25] Still here...
+19-04-2020 16:46:54 WARNING  [views.py:26] Goodbye
+19-04-2020 16:46:55 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 16:56:05 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\MedProject\urls.py changed, reloading.
+19-04-2020 16:56:05 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 16:56:07 WARNING  [views.py:24] Hello
+19-04-2020 16:56:07 ERROR    [views.py:25] Still here...
+19-04-2020 16:56:07 WARNING  [views.py:26] Goodbye
+19-04-2020 16:56:07 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 16:57:11 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\MedProject\urls.py changed, reloading.
+19-04-2020 16:57:11 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 16:57:12 WARNING  [views.py:24] Hello
+19-04-2020 16:57:12 ERROR    [views.py:25] Still here...
+19-04-2020 16:57:12 WARNING  [views.py:26] Goodbye
+19-04-2020 16:57:13 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 18:51:49 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\MedProject\settings.py changed, reloading.
+19-04-2020 18:51:49 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 19:17:15 WARNING  [views.py:24] Hello
+19-04-2020 19:17:15 ERROR    [views.py:25] Still here...
+19-04-2020 19:17:15 WARNING  [views.py:26] Goodbye
+19-04-2020 19:17:16 WARNING  [views.py:24] Initializing descriptions view

@@ -1,6 +1,4 @@
 from django.db import models
-
-
 class BaseAbstractModel(models.Model):
     """
      This model defines base models that implements common fields like:
