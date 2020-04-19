@@ -24,10 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%pd)t34tzn9#l5e&q(d-6t9to(z2*cge-&22&z3_=5noic#7+5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -43,8 +42,10 @@ INSTALLED_APPS = [
     'rangefilter',
     'corsheaders',
     'drf_yasg',
+
     'incidents',
-    'descriptions'
+    'descriptions',
+    'appAuths'
 ]
 
 MIDDLEWARE = [
@@ -97,14 +98,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -139,7 +132,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 50,
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': (
-       # 'spreadmessaging.authentication.JWTAuthentication',
+    'MedProject.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -155,6 +148,10 @@ REST_FRAMEWORK = {
     ),
 }
 
+AUTH_USER_MODEL = 'appAuths.User'
+
+#JWT
+JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY', '')
 
 #CORS Setting
 CORS_ORIGIN_ALLOW_ALL = True

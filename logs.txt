@@ -1,0 +1,34 @@
+19-04-2020 13:30:28 WARNING  [views.py:24] Hello
+19-04-2020 13:30:28 ERROR    [views.py:25] Still here...
+19-04-2020 13:30:28 WARNING  [views.py:26] Goodbye
+19-04-2020 13:30:29 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 13:31:03 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 13:34:10 WARNING  [views.py:24] Hello
+19-04-2020 13:34:10 ERROR    [views.py:25] Still here...
+19-04-2020 13:34:10 WARNING  [views.py:26] Goodbye
+19-04-2020 13:34:11 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 13:34:45 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 13:36:08 WARNING  [views.py:24] Hello
+19-04-2020 13:36:08 ERROR    [views.py:25] Still here...
+19-04-2020 13:36:08 WARNING  [views.py:26] Goodbye
+19-04-2020 13:36:09 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 13:36:44 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 13:37:09 WARNING  [views.py:24] Hello
+19-04-2020 13:37:09 ERROR    [views.py:25] Still here...
+19-04-2020 13:37:09 WARNING  [views.py:26] Goodbye
+19-04-2020 13:37:09 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 13:37:43 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 13:39:06 WARNING  [views.py:24] Hello
+19-04-2020 13:39:06 ERROR    [views.py:25] Still here...
+19-04-2020 13:39:06 WARNING  [views.py:26] Goodbye
+19-04-2020 13:39:07 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 13:39:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:01:27 WARNING  [views.py:24] Hello
+19-04-2020 14:01:27 ERROR    [views.py:25] Still here...
+19-04-2020 14:01:27 WARNING  [views.py:26] Goodbye
+19-04-2020 14:01:28 WARNING  [views.py:24] Initializing descriptions view
+19-04-2020 14:02:01 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 14:04:00 WARNING  [views.py:24] Hello
+19-04-2020 14:04:00 ERROR    [views.py:25] Still here...
+19-04-2020 14:04:00 WARNING  [views.py:26] Goodbye
+19-04-2020 14:04:00 WARNING  [views.py:24] Initializing descriptions view

@@ -1,12 +1,10 @@
 # MedProject
-# To create environment pip for project
-python -m venv   ./.venv
 
-# To active pip env on window
-./venv/Scripts/activate
+# Getting started
+You will need to copy the .settings.env file and rename it .env
+Inside there you can fill in the values of the environment variables and you're all good to go.
 
-# To install all library required for this project
- pip install -r requirements.txt
+# or
 
 # To set environment deployment variable i.e db name etc
 create a .env, then add your detail using key pair
@@ -25,6 +23,15 @@ DATABASE_PORT = 5432
 ALLOWED_HOSTS = *
 ===================================
 
+
+# To create environment pip for project
+python -m venv   ./.venv
+
+# To active pip env on window
+./venv/Scripts/activate
+
+# To install all library required for this project
+ pip install -r requirements.txt
 
 # to run migration
 python manage.py makemigrations

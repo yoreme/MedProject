@@ -8,10 +8,10 @@ import uuid
 class Incident(BaseAbstractModel):
     """ Incident model  """
     place = models.CharField(max_length=50,blank=False, null=False)
-    personal_number = models.CharField(max_length=12,blank=False, null=False)
-    patient_firstname = models.CharField(max_length=12,blank=False, null=False)
-    patient_lastname = models.CharField(max_length=12,blank=False, null=False)
-    suggestion = models.TextField(max_length=5000,blank=False, null=False)
+    personal_number = models.CharField(max_length=12,blank=True, null=False)
+    patient_firstname = models.CharField(max_length=12,blank=True, null=False)
+    patient_lastname = models.CharField(max_length=12,blank=True, null=False)
+    suggestion = models.TextField(max_length=5000,blank=True, null=False)
 
      # Login Status
     MALE = 'MALE'
