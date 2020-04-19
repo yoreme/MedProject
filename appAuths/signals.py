@@ -8,7 +8,7 @@ from django.conf import settings
 from django.db.models import Q
 from django.core.signals import request_finished
 from django.contrib.auth.tokens import default_token_generator
-from utils.commonutil import get_client_ip
+from utils.common import get_client_ip
 
 from .models import UserLoginLogoutActivity,UserProfile
 import logging

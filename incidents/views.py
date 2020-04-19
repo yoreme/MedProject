@@ -17,7 +17,7 @@ from .serializers import IncidentSerializer,IncidentPostSerializer,IncidentDetai
 import logging
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg.openapi import Schema, TYPE_OBJECT, TYPE_STRING, TYPE_ARRAY
-from utils.commonutil import get_client_ip
+from utils.common import get_client_ip
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
