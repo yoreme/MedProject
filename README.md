@@ -36,7 +36,7 @@ python -m venv   ./venv
 ./Scripts/activate.bat
 
 # To install all library required for this project
- pip install -r requirements.txt
+pip install -r requirements.txt
 
 # to run migration
 python manage.py makemigrations

@@ -8,7 +8,7 @@ env/
 venv/
 ENV/
 .env.dev
-
+logs.txt
 # Virtualenv related
 bin/
 include/
