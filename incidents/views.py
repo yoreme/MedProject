@@ -17,7 +17,7 @@ from .serializers import IncidentSerializer,IncidentPostSerializer,IncidentDetai
 import logging
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg.openapi import Schema, TYPE_OBJECT, TYPE_STRING, TYPE_ARRAY
-
+from utils.common import get_client_ip
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -115,16 +115,6 @@ class IncidentList(generics.ListAPIView):
     ordering_fields = ('created_at', 'personal_number')
     ordering=('created_at',)
     search_fields = ('created_at', 'personal_number')
-
-
-
-def get_client_ip(request):
-    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-    if x_forwarded_for:
-        ip = x_forwarded_for.split(',')[0]
-    else:
-        ip = request.META.get('REMOTE_ADDR')
-    return ip
 
 
 class IncidentViewSet(viewsets.ModelViewSet):

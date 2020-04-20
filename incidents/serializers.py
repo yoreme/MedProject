@@ -20,13 +20,16 @@ class IncidentPostSerializer(serializers.ModelSerializer):
     personal_number = serializers.CharField(required=True,max_length=12)
     description = serializers.CharField(max_length=100000,allow_blank=False, allow_null=False) 
     action = serializers.CharField(max_length=100000,allow_blank=True, allow_null=True)
+    patient_firstname =  serializers.CharField(required=True)
+    patient_lastname = serializers.CharField(required=True)
+    suggestion =serializers.CharField(max_length=100000,allow_blank=False, allow_null=False) 
+    patient_sex = serializers.ChoiceField(choices=Incident.SEXS,default=Incident.MALE)
     incident_type = serializers.ChoiceField(choices=Incident.INCIDENT_TYPES,default=Incident.RISK)
-
     incident_date= serializers.DateField(required=True)
 
     class Meta:
         model = Incident
-        fields = ('place','personal_number','description', 'action','incident_date','incident_type')
+        fields = ('place','personal_number','patient_firstname','patient_lastname','suggestion','patient_sex','description', 'action','incident_date','incident_type')
 
     def validate(self, attrs):
         place = attrs.get('place',None)
