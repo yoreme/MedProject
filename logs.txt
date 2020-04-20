@@ -584,3 +584,23 @@ AssertionError: Class ResponseSerializer missing "Meta" attribute
 19-04-2020 20:06:22 WARNING  [views.py:24] Initializing descriptions view
 19-04-2020 20:35:12 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\incidents\views.py changed, reloading.
 19-04-2020 20:35:12 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+19-04-2020 20:35:13 WARNING  [views.py:24] Hello
+19-04-2020 20:35:13 ERROR    [views.py:25] Still here...
+19-04-2020 20:35:13 WARNING  [views.py:26] Goodbye
+19-04-2020 20:35:13 WARNING  [views.py:24] Initializing descriptions view
+20-04-2020 13:08:43 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\utils\common.py changed, reloading.
+20-04-2020 13:08:43 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+20-04-2020 13:08:46 WARNING  [views.py:24] Hello
+20-04-2020 13:08:46 ERROR    [views.py:25] Still here...
+20-04-2020 13:08:46 WARNING  [views.py:26] Goodbye
+20-04-2020 13:08:47 WARNING  [views.py:24] Initializing descriptions view
+20-04-2020 13:12:55 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\utils\common.py changed, reloading.
+20-04-2020 13:12:55 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+20-04-2020 13:16:05 WARNING  [views.py:24] Hello
+20-04-2020 13:16:05 ERROR    [views.py:25] Still here...
+20-04-2020 13:16:05 WARNING  [views.py:26] Goodbye
+20-04-2020 13:16:05 WARNING  [views.py:24] Initializing descriptions view
+20-04-2020 13:16:33 WARNING  [views.py:24] Hello
+20-04-2020 13:16:33 ERROR    [views.py:25] Still here...
+20-04-2020 13:16:33 WARNING  [views.py:26] Goodbye
+20-04-2020 13:16:34 WARNING  [views.py:24] Initializing descriptions view

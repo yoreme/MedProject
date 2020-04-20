@@ -3,7 +3,7 @@ from rest_framework import serializers
 import re
 
 from .models import User,UserProfile
-import utils.service  as services
+from utils.common  import PASSWORD_PATTERN,EMAIL_PATTERN
 
 import logging
 
@@ -49,12 +49,8 @@ class RegistrationSerializer(serializers.Serializer):
         password = attrs.get('password',None)
         phone_no = attrs.get('phone_no',None)
       
-        password_pattern = services.PASSWORD_PATTERN
-        email_pattern = services.EMAIL_PATTERN
-        phone_pattern = services.PHONE_PATTERN
-        phone_pattern_rule = services.number_rule
-        logger.info('phone_pattern_rule:{}'.format(phone_pattern_rule))
-
+        password_pattern = PASSWORD_PATTERN
+        email_pattern = EMAIL_PATTERN
 
         #USERNAME VALIDATION
         if username is None:
@@ -105,12 +101,10 @@ class RegistrationSerializer(serializers.Serializer):
                 'A phone number is required to log in.'
             )
          
-        if re.match(phone_pattern,phone_no) or (phone_no.startswith('0') and len(phone_no)==11):
-            if phone_pattern_rule(phone_no):
-                #userx = [i for i in  User.objects.all() if i.phone_no[-10:] == phone_no[-10:]]
-                #if not userx:
-                if User.objects.filter(phone_no__exact=phone_no).exists():
-                    return serializers.ValidationError('This phone number: {} , already belongs to a user on spread messaging'.format(phone_no))
+        if phone_no.startswith('0') and len(phone_no)==10:
+            if User.objects.filter(phone_no__exact=phone_no).exists():
+                return serializers.ValidationError('This phone number: {} , already belongs to a user on spread messaging'.format(phone_no))
+               
         else:
 
             return serializers.ValidationError('This phone number: {} is not valid'.format(phone_no))
