@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 logger.warn("Initializing descriptions view")
 
 embeddings = Embeddings()
-embeddings.load_embeddings("c:\dev\swectors-300dim.txt")
+embeddings.load_embeddings("c:\\workspace\\MedProject\\swectors-300dim.txt")
 
 # Create your views here.
 
