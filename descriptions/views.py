@@ -15,6 +15,8 @@ from scipy.stats import wasserstein_distance
 
 # import the logging library
 import logging
+import threading
+
 from drf_yasg.utils import swagger_auto_schema
 
 from .Embeddings import Embeddings
@@ -24,7 +26,8 @@ logger = logging.getLogger(__name__)
 logger.warn("Initializing descriptions view")
 
 embeddings = Embeddings()
-embeddings.load_embeddings("c:\dev\swectors-300dim.txt")
+embeddings_thread = threading.Thread(target=embeddings.load_embeddings, args=["c:\\workspace\\MedProject\\swectors-300dim.txt"])
+embeddings_thread.start()
 
 # Create your views here.
 

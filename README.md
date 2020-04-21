@@ -14,13 +14,12 @@ List of NameValue for .env file
 ===================================
 ==================================
 DEBUG = True
-ALLOWED_HOSTS = *
+ALLOWED_HOSTS = http://localhost:4200,http://127.0.0.1:9000
 DATABASE_NAME = your-db-name
 DATABASE_USER = your-username
 DATABASE_PASSWORD = your-password
 DATABASE_HOST = localhost
 DATABASE_PORT = 5432
-ALLOWED_HOSTS = *
 ===================================
 
 
