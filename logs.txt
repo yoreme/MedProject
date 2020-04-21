@@ -604,3 +604,9 @@ AssertionError: Class ResponseSerializer missing "Meta" attribute
 20-04-2020 13:16:33 ERROR    [views.py:25] Still here...
 20-04-2020 13:16:33 WARNING  [views.py:26] Goodbye
 20-04-2020 13:16:34 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 12:08:36 INFO     [autoreload.py:222] C:\Project\Web\python\MedProject\MedProject\urls.py changed, reloading.
+21-04-2020 12:08:36 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+21-04-2020 12:08:39 WARNING  [views.py:24] Hello
+21-04-2020 12:08:39 ERROR    [views.py:25] Still here...
+21-04-2020 12:08:39 WARNING  [views.py:26] Goodbye
+21-04-2020 12:08:40 WARNING  [views.py:24] Initializing descriptions view
