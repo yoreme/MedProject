@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import re_path,include
 from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework import permissions
@@ -38,14 +38,14 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('swagger', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('openapi/', TemplateView.as_view(template_name="swagger-ui/dist/index.html")),
-    path('auth/',include('appAuths.urls')),
-    path('docs/', schema_view,name='schema_view'),
-    path('incidents/',include('incidents.urls')),
-    path('descriptions/',include('descriptions.urls'))
+    re_path('admin/', admin.site.urls),
+    re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    re_path('swagger', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    re_path('openapi/', TemplateView.as_view(template_name="swagger-ui/dist/index.html")),
+    re_path('auth/',include('appAuths.urls')),
+    re_path('docs/', schema_view,name='schema_view'),
+    re_path('incidents/',include('incidents.urls')),
+    re_path('descriptions/',include('descriptions.urls'))
 ] 
 
 

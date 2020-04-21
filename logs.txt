@@ -604,3 +604,29 @@ AssertionError: Class ResponseSerializer missing "Meta" attribute
 20-04-2020 13:16:33 ERROR    [views.py:25] Still here...
 20-04-2020 13:16:33 WARNING  [views.py:26] Goodbye
 20-04-2020 13:16:34 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 12:59:35 WARNING  [views.py:24] Hello
+21-04-2020 12:59:35 ERROR    [views.py:25] Still here...
+21-04-2020 12:59:35 WARNING  [views.py:26] Goodbye
+21-04-2020 12:59:37 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 13:00:01 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+21-04-2020 13:03:32 WARNING  [views.py:24] Hello
+21-04-2020 13:03:32 ERROR    [views.py:25] Still here...
+21-04-2020 13:03:32 WARNING  [views.py:26] Goodbye
+21-04-2020 13:03:32 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 13:03:56 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+21-04-2020 13:05:16 WARNING  [views.py:24] Hello
+21-04-2020 13:05:16 ERROR    [views.py:25] Still here...
+21-04-2020 13:05:16 WARNING  [views.py:26] Goodbye
+21-04-2020 13:05:16 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 13:05:40 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+21-04-2020 13:06:19 WARNING  [views.py:24] Hello
+21-04-2020 13:06:19 ERROR    [views.py:25] Still here...
+21-04-2020 13:06:19 WARNING  [views.py:26] Goodbye
+21-04-2020 13:06:20 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 13:06:44 DEBUG    [proactor_events.py:623] Using proactor: IocpProactor
+21-04-2020 13:15:53 WARNING  [views.py:24] Hello
+21-04-2020 13:15:53 ERROR    [views.py:25] Still here...
+21-04-2020 13:15:53 WARNING  [views.py:26] Goodbye
+21-04-2020 13:15:54 WARNING  [views.py:24] Initializing descriptions view
+21-04-2020 13:16:35 WARNING  [log.py:222] Not Found: /
+21-04-2020 13:16:35 WARNING  [log.py:222] Not Found: /favicon.ico
