@@ -152,7 +152,7 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'appAuths.User'
 
 #JWT
-JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY', '')
+JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY','1q2w3e4r5t6y7u8i')
 
 #CORS Setting
 CORS_ORIGIN_ALLOW_ALL = True

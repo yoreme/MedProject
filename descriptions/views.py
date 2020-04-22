@@ -17,6 +17,8 @@ from scipy.stats import wasserstein_distance
 import logging
 from drf_yasg.utils import swagger_auto_schema
 
+from decouple import config
+
 from .Embeddings import Embeddings
 
 # Get an instance of a logger
@@ -24,8 +26,7 @@ logger = logging.getLogger(__name__)
 logger.warn("Initializing descriptions view")
 
 embeddings = Embeddings()
-embeddings.load_embeddings("c:\\workspace\\MedProject\\swectors-300dim.txt")
-
+embeddings.load_embeddings(config('EmbeddingfilePath'))
 # Create your views here.
 
 class EmbeddingsAPIView(APIView):

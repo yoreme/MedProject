@@ -2,6 +2,30 @@ from django.utils.timezone import now
 from datetime import datetime, date
 from rest_framework import serializers
 from .models import Incident
+from dateutil.parser import parse
+import re
+
+def is_date(string, fuzzy=False):
+    """
+    Return whether the string can be interpreted as a date.
+
+    :param string: str, string to check for date
+    :param fuzzy: bool, ignore unknown tokens in string if True
+    """
+    try: 
+        parse(string, fuzzy=fuzzy)
+        return True
+
+    except ValueError:
+        return False
+
+def valid_date(datestring):
+    try:
+        datetime.strptime(datestring, '%d-%m-%Y')
+        return True
+    except ValueError:
+        return False
+
 
 class IncidentDetailSerializer(serializers.ModelSerializer):
     days_since_incident = serializers.SerializerMethodField()
@@ -11,7 +35,7 @@ class IncidentDetailSerializer(serializers.ModelSerializer):
         fields ='__all__'
 
     def get_days_since_incident(self, obj):
-        return (now() - obj.incident_date).days
+        return (datetime.now().date() -  datetime.strptime(obj.incident_date, '%d-%m-%Y').date()).days
 
 
 class IncidentPostSerializer(serializers.ModelSerializer):
@@ -25,7 +49,7 @@ class IncidentPostSerializer(serializers.ModelSerializer):
     suggestion =serializers.CharField(max_length=100000,allow_blank=False, allow_null=False) 
     patient_sex = serializers.ChoiceField(choices=Incident.SEXS,default=Incident.MALE)
     incident_type = serializers.ChoiceField(choices=Incident.INCIDENT_TYPES,default=Incident.RISK)
-    incident_date= serializers.DateField(required=True)
+    incident_date= serializers.CharField(required=True)
 
     class Meta:
         model = Incident
@@ -60,10 +84,26 @@ class IncidentPostSerializer(serializers.ModelSerializer):
             )
 
         if incident_date is not None:
-            incident_date = datetime.strptime(incident_date, '%m/%d/%Y').date()
+            if is_date(incident_date) and valid_date(incident_date):
+                if '-' in incident_date:
+                    print('date has -')
+                    convert_date=datetime.strptime(incident_date, '%d-%m-%Y')
+                    print('The date is {}.'.format(convert_date))
+                    incident_date =convert_date 
+                elif '/' in  incident_date:
+                    print('date has /')
+                    convert__date=datetime.strptime(incident_date, '%d/%m/%Y')
+                    print('The date is {}.'.format(convert__date))
+                else:
+                    print('date has no check')
+                    incident_date=datetime.now()
+            else:
+                raise serializers.ValidationError(
+                'incident date is required,Required Format DD-MM-YYYY.'
+                )
         else:
             raise serializers.ValidationError(
-                'incident date is required.'
+                'incident date is required,Required Format DD-MM-YYYY.'
             )
 
         return attrs

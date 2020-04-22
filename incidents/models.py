@@ -24,7 +24,7 @@ class Incident(BaseAbstractModel):
     description = models.TextField(max_length=5000,blank=False, null=False)
     action = models.TextField(max_length=5000,blank=True, null=True)
     image = models.ImageField(upload_to='images/',blank=True, null=True)
-    incident_date=models.DateTimeField(default=datetime.now(), blank=False, null=False)
+    incident_date=models.CharField(max_length=12,blank=False, null=False)
 
     # Login Status
     RISK = 'Risk'
@@ -32,7 +32,7 @@ class Incident(BaseAbstractModel):
     ADVERSEEVENT = 'Adverse Event'
     INCIDENT_TYPES = ((RISK, 'Risk'),
                 (NEARMISS, 'Near miss'),
-                (NEARMISS, 'Adverse Event'),
+                (ADVERSEEVENT, 'Adverse Event'),
                 )
     
     # incident_types = (
@@ -41,7 +41,7 @@ class Incident(BaseAbstractModel):
     #                     (3, "Adverse Event"),
     #                 )
     # type = models.PositiveSmallIntegerField(choices=incident_types, default=1)
-    incident_type = models.CharField(max_length=10, default=RISK, choices=INCIDENT_TYPES, null=True, blank=True)
+    incident_type = models.CharField(max_length=20, default=RISK, choices=INCIDENT_TYPES, null=True, blank=True)
 
 
     #all this are to filled from code behind

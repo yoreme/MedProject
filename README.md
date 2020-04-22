@@ -14,12 +14,14 @@ List of NameValue for .env file
 ===================================
 ==================================
 DEBUG = True
-ALLOWED_HOSTS = http://localhost:4200,http://127.0.0.1:9000
-DATABASE_NAME = your-db-name
-DATABASE_USER = your-username
-DATABASE_PASSWORD = your-password
+DATABASE_NAME = your_db_name
+DATABASE_USER = postgres
+DATABASE_PASSWORD = our_db_password
 DATABASE_HOST = localhost
 DATABASE_PORT = 5432
+ALLOWED_HOSTS = http://localhost:4200,http://127.0.0.1:9000
+JWT_SECRET_KEY=1q2w3e4r5t6y7u8i
+EmbeddingfilePath=C:\dev\swectors-300dim.txt
 ===================================
 
 
