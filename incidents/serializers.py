@@ -2,29 +2,7 @@ from django.utils.timezone import now
 from datetime import datetime, date
 from rest_framework import serializers
 from .models import Incident
-from dateutil.parser import parse
-import re
-
-def is_date(string, fuzzy=False):
-    """
-    Return whether the string can be interpreted as a date.
-
-    :param string: str, string to check for date
-    :param fuzzy: bool, ignore unknown tokens in string if True
-    """
-    try: 
-        parse(string, fuzzy=fuzzy)
-        return True
-
-    except ValueError:
-        return False
-
-def valid_date(datestring):
-    try:
-        datetime.strptime(datestring, '%d-%m-%Y')
-        return True
-    except ValueError:
-        return False
+from utils.common import is_date,valid_date
 
 
 class IncidentDetailSerializer(serializers.ModelSerializer):
