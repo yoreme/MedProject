@@ -3,6 +3,7 @@ from datetime import datetime, date
 from rest_framework import serializers
 from .models import Incident
 from utils.common import is_date,valid_date
+from utils.enum import  (MALE,SEXS,RISK,INCIDENT_CATEGORIES)
 
 
 class IncidentDetailSerializer(serializers.ModelSerializer):
@@ -25,20 +26,20 @@ class IncidentPostSerializer(serializers.ModelSerializer):
     patient_firstname =  serializers.CharField(required=True)
     patient_lastname = serializers.CharField(required=True)
     suggestion =serializers.CharField(max_length=100000,allow_blank=False, allow_null=False) 
-    patient_sex = serializers.ChoiceField(choices=Incident.SEXS,default=Incident.MALE)
-    incident_type = serializers.ChoiceField(choices=Incident.INCIDENT_TYPES,default=Incident.RISK)
-    incident_date= serializers.CharField(required=True)
+    gender = serializers.ChoiceField(choices=SEXS,default=MALE)
+    category = serializers.ChoiceField(choices=INCIDENT_CATEGORIES,default=RISK)
+    event_date= serializers.CharField(required=True)
 
     class Meta:
         model = Incident
-        fields = ('place','personal_number','patient_firstname','patient_lastname','suggestion','patient_sex','description', 'action','incident_date','incident_type')
+        fields = ('place','personal_number','patient_firstname','patient_lastname','suggestion','gender','description', 'action','event_date','category')
 
     def validate(self, attrs):
         place = attrs.get('place',None)
         personal_number = attrs.get('personal_number',None)
         description = attrs.get('description',None)
         action = attrs.get('action',None)
-        incident_date=attrs.get('incident_date',None)
+        event_date=attrs.get('event_date',None)
 
         #VALIDATION
         if place is None:
@@ -61,20 +62,20 @@ class IncidentPostSerializer(serializers.ModelSerializer):
                 'action is required.'
             )
 
-        if incident_date is not None:
-            if is_date(incident_date) and valid_date(incident_date):
-                if '-' in incident_date:
+        if event_date is not None:
+            if is_date(event_date) and valid_date(event_date):
+                if '-' in event_date:
                     print('date has -')
-                    convert_date=datetime.strptime(incident_date, '%d-%m-%Y')
+                    convert_date=datetime.strptime(event_date, '%d-%m-%Y')
                     print('The date is {}.'.format(convert_date))
-                    incident_date =convert_date 
-                elif '/' in  incident_date:
+                    event_date =convert_date 
+                elif '/' in  event_date:
                     print('date has /')
-                    convert__date=datetime.strptime(incident_date, '%d/%m/%Y')
+                    convert__date=datetime.strptime(event_date, '%d/%m/%Y')
                     print('The date is {}.'.format(convert__date))
                 else:
                     print('date has no check')
-                    incident_date=datetime.now()
+                    event_date=datetime.now()
             else:
                 raise serializers.ValidationError(
                 'incident date is required,Required Format DD-MM-YYYY.'
