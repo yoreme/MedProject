@@ -200,7 +200,8 @@ class ThirdCategoryFileUploadView(APIView):
             fs = FileSystemStorage(location=new_path)  
             path=fs.save(file_name,file_data)
             logger.info('filestorage file path :{}'.format(path))
-            secondcategory=First_Category.objects.get(id=secondcategoryid)
+            secondcategory=Second_Category.objects.get(id=secondcategoryid)
+            logger.info('firstcategory id :{}'.format(secondcategory.firstcategory_id))
             if not file_extension in self.valid_extensions:
                 raise ValidationError("file not in correct format, must be txt,current format '{0}'".format(file_extension))
             if file_extension =='.txt': 

@@ -60,7 +60,7 @@ class ThirdCategoryDetailSerializer(serializers.ModelSerializer):
 
 
     class Meta:
-        model = Second_Category
+        model = Third_Category
         fields = ('id', 'name','firstcategory','firstcategory_name','secondcategory','secondcategory_name','created_at')
 
 
@@ -71,7 +71,7 @@ class ThirdCategoryPostSerializer(serializers.ModelSerializer):
 
 
     class Meta:
-        model = Second_Category
+        model = Third_Category
         fields = ('id','name','firstcategory','secondcategory')
         read_only_Fields = ('id',)
 
