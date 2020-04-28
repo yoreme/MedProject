@@ -45,7 +45,8 @@ urlpatterns = [
     path('auth/',include('appAuths.urls')),
     path('docs/', schema_view,name='schema_view'),
     path('incidents/',include('incidents.urls')),
-    path('descriptions/',include('descriptions.urls'))
+    path('descriptions/',include('descriptions.urls')),
+    path('lookups/',include('lookups.urls'))
 ] 
 
 

@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     
     'incidents',
     'descriptions',
-    'appAuths'
+    'appAuths',
+    'lookups'
 ]
 
 MIDDLEWARE = [
