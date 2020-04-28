@@ -48,5 +48,8 @@ python manage.py migrate
 # to run app
 python manage.py runserver
 
+# to remove __pycache__
+git rm --cached */__pycache__/*
+
 
 

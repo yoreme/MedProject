@@ -20,9 +20,11 @@ pip-selfcheck.json
 
 
 # Byte-compiled / optimized / DLL files
+**/__pycache__
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -112,9 +114,8 @@ celerybeat-schedule
 # mypy
 .mypy_cache/
 
-__pycache__/
-*.pyc
 
+db.sqlite3
 \.tools/
 \.vscode/
 \.dotnet/
