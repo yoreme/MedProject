@@ -172,10 +172,83 @@ class ThirdCategoryAPIView(APIView):
         return Response({'message':'An error occurred while processing yur request','error':serializer.errors,}, status=status.HTTP_400_BAD_REQUEST)
 
 
+
+class ThirdCategoryFileUploadView(APIView):
+    """
+        A view that can accept POST requests with JSON content.
+    """
+    parser_classes = [MultiPartParser]
+    permission_classes = [AllowAny]
+    serializer=FileUploadSerializer
+    valid_extensions = ['.txt']
+    lookup_field = 'secondcategoryid'  
+
+    def put(self,request,**kwargs):
+        success_count=0
+        duplicate_count=0
+        total_item_count=0
+        secondcategoryid=self.kwargs.get(self.lookup_field)
+        now = datetime.now() # current date and time
+        serializer = self.serializer(data=request.FILES)
+        if serializer.is_valid():
+            file_data = serializer.validated_data['file']
+            file_extension = os.path.splitext(file_data.name)[1]
+            logger.info('file extension :{}'.format(file_extension))
+            new_path = settings.MEDIA_ROOT + f'/upload/{now.strftime("%Y")}/{now.strftime("%m")}/{now.strftime("%d")}' 
+            file_name=str(uuid.uuid1())+file_data.name
+            logger.info('file name :{}'.format(file_name))
+            fs = FileSystemStorage(location=new_path)  
+            path=fs.save(file_name,file_data)
+            logger.info('filestorage file path :{}'.format(path))
+            secondcategory=First_Category.objects.get(id=secondcategoryid)
+            if not file_extension in self.valid_extensions:
+                raise ValidationError("file not in correct format, must be txt,current format '{0}'".format(file_extension))
+            if file_extension =='.txt': 
+                with open(os.path.join(new_path,file_name),'r') as f:
+                    content=f.readlines()
+                    for line in content[0:]:
+                        total_item_count +=1
+                        line=line.strip()
+                        if line is not None:
+                            if not Third_Category.objects.filter(name=line,secondcategory=secondcategoryid,firstcategory=secondcategory.firstcategory_id).exists():
+                                secondcategory_data = {
+                                "name": line,
+                                "firstcategory":secondcategory.firstcategory,
+                                "secondcategory":secondcategory}
+                                Third_Category.objects.create(**secondcategory_data)
+                                success_count +=1
+                            else:
+                                duplicate_count +=1
+                            
+                if fs.exists(file_name):
+                    logger.info('file exist,now going to delete')
+                    fs.delete(file_name)
+
+                return Response({'success': 'Imported successfully','total Item':f'{total_item_count}', 'duplicate':f'{duplicate_count}', 'sucessfully processed':f'{success_count}'},status=200)
+        else:
+            return Response(serializer.errors, status=400)
+
+
+
         
 class ThirdCategoryList(generics.ListAPIView):
     permission_classes = [AllowAny]
     serializer_class = ThirdCategoryDetailSerializer
-    queryset = Third_Category.objects.all()
     ordering_fields = ('created_at')
     ordering=('created_at',)
+
+    def get_queryset(self):
+        """
+        This view should return a list of all the third Category list.
+        """ 
+        queryset = Third_Category.objects.all()
+        firstcategory = self.request.query_params.get('firstcategory', None)
+        secondcategory = self.request.query_params.get('secondcategory', None)
+        logger.info('firstcategory query_params:{}'.format(firstcategory))
+        if firstcategory is not None:
+            queryset = queryset.filter(firstcategory_id=firstcategory)
+
+        if secondcategory is not None:
+            queryset = queryset.filter(secondcategory_id=secondcategory)
+
+        return queryset

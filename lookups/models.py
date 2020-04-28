@@ -26,7 +26,7 @@ class Second_Category(BaseAbstractModel):
 class Third_Category(BaseAbstractModel):
     """ Incident Management Third Category model   """
     name = models.CharField(max_length=50,blank=False, null=False)
-    first_category = models.ForeignKey('lookups.First_Category',related_name='firstcategory', on_delete=models.CASCADE,blank=True, null=True)
+    firstcategory = models.ForeignKey('lookups.First_Category',related_name='firstcategory', on_delete=models.CASCADE,blank=True, null=True)
     secondcategory = models.ForeignKey('lookups.Second_Category',related_name='secondcategory',on_delete=models.CASCADE,blank=True, null=True)
 
     def __str__(self):
