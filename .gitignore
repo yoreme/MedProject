@@ -1,6 +1,7 @@
 .DS_STORE
 
 # Environments
+media/
 .venv
 \.env
 \.venv
