@@ -15,5 +15,5 @@ python-decouple>=3.3
 drf-yasg>=1.17.1
 django-auditlog>=0.4.7
 PyJWT>=1.7.1
-djoser>=
+djoser>=2.0.3
 scipy
